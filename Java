@@ -1,0 +1,89 @@
+public class Rectaangle {
+ public static void main(String[] args) {
+            int row=7;
+            int col=14;
+            int i=0;
+            while(i<row) {
+                int j=0;
+                while(j<col) {
+                    if( i==0 || j==0 || i== row-1 || j==col-1) {
+                        System.out.print("*");
+                    }
+                    else {
+                        System.out.print(" ");
+                    }
+                    j++;
+                }System.out.println();
+                i++;
+            }
+        }
+    
+    
+}
+public class pyramid {
+    public static void main(String[] args) {
+		
+		int n=5;
+		for(int row=1; row<=n ; row++) {
+			for (int spa =1 ; spa<=n-row;spa++) {
+				System.out.print(" ");
+			}for(int sta=1; sta<=row ; sta++) {
+				System.out.print("*");
+			}System.out.println();
+		}
+        
+	}
+
+}
+public class RTriangle {
+    public static void main(String[] args) {
+       int n=5;
+       int i=0;
+       while(i<n){
+        int j=n;
+        while(j>i){
+            System.out.print("*");
+            j--;
+
+        }System.out.println();
+        i++;
+       }
+    
+}}
+public class palidrone {
+
+    public static void main(String[] args) {
+        int num=121;
+        int rev=0;
+        int num1=num;
+        while(num>0){
+            int dig=num%10;
+            rev=rev*10+dig;
+            num=num/10;
+        }
+        if(num1==rev){
+            System.out.println("palidrone number");
+        }
+        else{
+            System.out.println("not a palidrone number");
+        }
+    }
+
+    
+}
+class InvertedRight {
+    public static void main(String[] args) {
+        int row=10;
+        int i=0;
+        while(i<row){
+            int j=row;
+            while(j>i){
+                System.out.print("*");
+                j--;
+            }System.out.println();
+            i++;
+        }
+    }
+}
+    
+
